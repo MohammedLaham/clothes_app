@@ -8,19 +8,19 @@ class SplashBody extends StatefulWidget {
 
 class _SplashBodyState extends State<SplashBody> with SingleTickerProviderStateMixin{
   AnimationController? animationController;
-  Animation? fadingAnimation;
+  Animation<double>? fadingAnimation;
   @override
   void initState() {
     super.initState();
     animationController=AnimationController(vsync: this,duration: Duration(milliseconds: 600));
-    fadingAnimation=Tween<double>(begin: .2,end: 1).animate(animationController!)..addListener(() {
-      setState(() {
-        if(animationController!.isCompleted){
-          animationController?.repeat(reverse: true);
-        }
-      });
-    });
-    animationController?.forward();
+    fadingAnimation=Tween<double>(begin: .2,end: 1).animate(animationController!);
+    animationController?.repeat(reverse: true);
+  }
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    animationController?.dispose();
   }
   @override
   Widget build(BuildContext context) {
@@ -30,13 +30,13 @@ class _SplashBodyState extends State<SplashBody> with SingleTickerProviderStateM
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset('assest/images/splash_view2.png'),
-          Opacity(opacity: fadingAnimation?.value,
-          child:     const Text('Clothes Market',style: TextStyle(
-              color: Colors.white,
-              fontSize: 45,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'Poppins'
-          ),),),
+           FadeTransition(opacity: fadingAnimation!,
+           child:  const Text('Clothes Market',style: TextStyle(
+               color: Colors.white,
+               fontSize: 45,
+               fontWeight: FontWeight.bold,
+               fontFamily: 'Poppins'
+           ),),),
           Image.asset('assest/images/splash_view_image.png')
         ],
       ),
