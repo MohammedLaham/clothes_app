@@ -11,7 +11,10 @@ class ClothApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
-      home: SplashView(),);
+    return  GetMaterialApp(
+      theme: ThemeData(fontFamily: 'Poppins'),
+      debugShowCheckedModeBanner: false,
+
+      home:const  SplashView(),);
   }
 }
