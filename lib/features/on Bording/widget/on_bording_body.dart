@@ -1,5 +1,6 @@
 import 'package:clothesmarketer/core/utils/size_conf.dart';
 import 'package:clothesmarketer/core/widgwts/custom_button.dart';
+import 'package:clothesmarketer/features/on%20Bording/widget/custom_page_view.dart';
 import 'package:flutter/material.dart';
 
 class OnBordingBody extends StatelessWidget {
@@ -9,6 +10,7 @@ class OnBordingBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
+        const CustomPageView() ,
         Positioned(
             //هذه افضل من الميديا كويري
             top: SizeConfig.defaultSize! * 10,
