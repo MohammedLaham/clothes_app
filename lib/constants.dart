@@ -1,4 +1,4 @@
 import 'dart:ui';
 
-const Color pKColor = Color(0xFFDB3022 );
+const Color pKColor = Color(0xffD64550 );
 const kLogo='assest/images/logo.png';

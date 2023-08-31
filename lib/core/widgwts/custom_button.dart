@@ -1,7 +1,8 @@
 import 'package:clothesmarketer/constants.dart';
 import 'package:clothesmarketer/core/utils/size_conf.dart';
-import 'package:clothesmarketer/core/widgwts/custom_sizedbox.dart';
 import 'package:flutter/material.dart';
+
+import 'custom_sized_box.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({Key? key, required this.text, this.onTap})

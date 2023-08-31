@@ -14,7 +14,7 @@ class ClothApp extends StatelessWidget {
     return  GetMaterialApp(
       theme: ThemeData(fontFamily: 'Poppins'),
       debugShowCheckedModeBanner: false,
-
+//git remote set-url origin https://github.com/MohammedLaham/clothes_app.git
       home:const  SplashView(),);
   }
 }

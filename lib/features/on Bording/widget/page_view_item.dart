@@ -1,5 +1,5 @@
 import 'package:clothesmarketer/core/utils/size_conf.dart';
-import 'package:clothesmarketer/core/widgwts/custom_sizedbox.dart';
+import 'package:clothesmarketer/core/widgwts/custom_sized_box.dart';
 import 'package:flutter/material.dart';
 
 class PageViewItem extends StatelessWidget {

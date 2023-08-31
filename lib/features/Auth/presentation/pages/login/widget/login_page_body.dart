@@ -1,7 +1,7 @@
 import 'package:clothesmarketer/constants.dart';
 import 'package:clothesmarketer/core/utils/size_conf.dart';
 import 'package:clothesmarketer/core/widgwts/custom_button.dart';
-import 'package:clothesmarketer/core/widgwts/custom_sizedbox.dart';
+import 'package:clothesmarketer/core/widgwts/custom_sized_box.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 

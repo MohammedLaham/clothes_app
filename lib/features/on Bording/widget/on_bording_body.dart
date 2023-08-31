@@ -1,7 +1,7 @@
 import 'package:clothesmarketer/core/utils/size_conf.dart';
 import 'package:clothesmarketer/core/widgwts/custom_button.dart';
 import 'package:clothesmarketer/features/Auth/presentation/pages/login/login_page.dart';
-import 'package:clothesmarketer/features/on%20Bording/widget/custom_dots_indicator.dart';
+import 'package:clothesmarketer/features/on%20Bording/widget/custom_dotsindicator.dart';
 import 'package:clothesmarketer/features/on%20Bording/widget/custom_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -23,8 +23,8 @@ class _OnBordingBodyState extends State<OnBordingBody> {
     pageController = PageController(
       initialPage: 0,
     )..addListener(() {
-        setState(() {});
-      });
+      setState(() {});
+    });
     super.initState();
   }
 
@@ -50,7 +50,7 @@ class _OnBordingBodyState extends State<OnBordingBody> {
               ? (pageController?.page == 2 ? false : true)
               : true,
           child: Positioned(
-              //هذه افضل من الميديا كويري
+            //هذه افضل من الميديا كويري
               top: SizeConfig.defaultSize! * 10,
               //top: MediaQuery.of(context).size.height*.1 ,//تعني نزلها من فوق 100 حسب حجم شاشة اي جهاز
               right: 32,
