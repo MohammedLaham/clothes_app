@@ -17,7 +17,7 @@ class PageViewItem extends StatelessWidget {
         SizedBox(
           height: SizeConfig.defaultSize! *20,
           child: Image.asset(image!,),
-        ),//gbmhg
+        ),//gbmةرو
         const VerticalSpace(5),
         Text(
           title!,
